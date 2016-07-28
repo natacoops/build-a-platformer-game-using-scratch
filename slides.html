@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Ladies Learning Code</title>
+  <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
+  <link rel="shortcut icon" href="framework/img/favicon.ico">
+
+  <!-- Takes care of CSS3 prefixes -->
+  <script src="framework/scripts/prefixfree.min.js"></script>
+  
+  <!-- opens all links in a new window -->
+  <base target="_blank">
+</head>
+
+<!-- Timer/progress bar: Define the presentation duration using "data-duration" in minutes. -->
+<body class="en" data-duration="360">
+  
+  <main>
+    <section class="slide welcome">
+      <h1><img class="logo-stacked" src="framework/img/llc-logo-stacked-white.png" alt="Ladies Learning Code logo">Welcome!</h1>
+      
+      <div class="instructions no-bullet-list">
+        <!-- ADD WIFI INFO HERE -->
+        <h2>Get Connected</h2>
+        <ul class="connected">
+          <li>Network: wifi network</li>
+          <li>Password: wifi password</li>
+        </ul>
+        <hr>
+        
+        <h2>Download<br> & Install</h2>
+        <ul class="downloads">
+          <li>Add any pre-class instructions here. Examples below.</li>
+          <li>Learner files (zip file): <a href="#">http://short-url-to-zip.com</a>
+            <ul>
+              <li>unzip the learner file (<em>extract all</em> if you’re on a PC)</li>
+              <li>open <strong>slides.html</strong> in the browser to view the slides</li>
+            </ul>
+          </li>
+          </li>
+        </ul>
+      </div>
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">by <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
+        <p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
+      </footer>
+    </section>
+    
+    <section class="slide intro">
+      <img class="logo" src="framework/img/llc-logo-white.png" alt="Ladies Learning Code logo">
+      <h1 class="heading-bg">
+        <span>Programming a 2D Platform</span><br>
+        <span>Game using Scratch</span>
+      </h1>
+      
+      <!-- FILL IN INSTRUCTOR DETAILS -->
+      <img class="instructor" src="http://natcooper.com/llc/photoshop/img/circle-headshot.png" alt="Nat Cooper">
+      <h2><span class="cursive">with</span> Nat Cooper</h2>  
+      <ul>
+        <li><a href="mailto:">nat@ladieslearningcode.com</a></li>
+        <li><a href="http://website.com">ladieslearningcode.com</a></li>
+        <li><a href="http://twitter.com/natacoops">@natacoops</a></li>
+      </ul>
+      
+      <div class="sponsor">
+        <p><img src="framework/img/scratch-cat.svg" alt="Scratch"></p>
+      </div>
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">by <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
+        <p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
+      </footer>
+    </section>
+
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #2D Platformer Games
+        ##A Brief History
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #A Brief History of Platformer Games
+
+        A platform game (or platformer) is a video game which involves guiding an **avatar** to jump between suspended platforms, over obstacles, or both to advance the game.
+
+        1981: Nintendo introduces Donkey Kong<!-- .element: class="delayed gametitle" --><br>![](framework/img/donkey-kong.png)<!-- .element: class="float" --> <span>• Players were able to jump over obstacles and gaps <br> • Game field has tiers connected by ladders<br> • Introduced **Mario**, a modern icon of the genre, under the name "Jumpman" <br> • Common gameplay goals: get to the top of the screen or collect all of a particular item<br><br>Other games from this era include <a href="https://en.wikipedia.org/wiki/Space_Panic" target="_blank">Space Panic</a>, <a href="https://en.wikipedia.org/wiki/Pitfall!" target="_blank">Pitfall</a> and <a href="https://en.wikipedia.org/wiki/Lode_Runner" target="_blank">Lode Runner</a></span>
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #A Brief History of Platformer Games
+
+        1981: ADK Corporation introduces Jump Bug<!-- .element: class="delayed gametitle" --><br>![](framework/img/jump-bug.png)<!-- .element: class="float" --> <span>• 5 months after Donkey Kong <br> • First platform game to use ***scrolling graphics***<br> • Uneven, independently suspended platforms <br>• Levels that scroll both horizontally and vertically <br><br>Other games from this era include <a href="https://en.wikipedia.org/wiki/Major_Havoc" target="_blank">Major Havoc</a>
+
+        1984: Namco introduces Pac-Land<!-- .element: class="delayed gametitle two" --><br>![](framework/img/pac-land.gif)<!-- .element: class="float" --> <span>• Very successful title that was later ported to many consoles <br> • Features multi-layered parallax scrolling<br> • Resembled later scrolling platformers like <a href="https://en.wikipedia.org/wiki/Wonder_Boy" target="_blank">Wonder Boy</a> and <a href="https://en.wikipedia.org/wiki/Super_Mario_Bros." target="_blank">Super Mario Bros</a> and was probably a direct influence on them
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #A Brief History of Platformer Games
+
+        1985: Nintendo introduces Super Mario Bros.<!-- .element: class="delayed gametitle" --><br>![](framework/img/mario-bros.png)<!-- .element: class="float" --> <span>• One of the most successful video games of all time <br> • Became the archetype for many platformers to follow <br> • Remains popular to this day
+
+        1990: Sega introduces Sonic The Hedgehog<!-- .element: class="delayed gametitle two" --><br>![](framework/img/sonic-hedgehog.png)<!-- .element: class="float" --> <span>• New style of design made possible by a new generation of hardware <br> • Large fields that scrolled effortlessly in all directions<br> • Complex physics system (speed with well placed jumps and rolls) <br> • Early 90s saw a shift away from 2D and fascination with 3D graphics
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #A Brief History of Platformer Games
+
+        Mid-late 1990s: 3D game platforms became more popular and the 2D platformer "genre" faded from the limelight. 
+
+        It wasn't until recently - with smartphone games gaining in popularity - that we are seeing a new wave of 2D platformer games created for mobile devices.
+
+        Can you think of any?<!-- .element: class="delayed" -->
+      </script>
+    </section>
+
+
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #"Endless Running" Platformer Games
+
+        Platform games in which the player character is continuously moving forward through a usually procedurally generated, theoretically endless game world.
+
+        * Game controls are limited to making the character jump, fly, or perform special actions. <!-- .element: class="delayed" -->
+        * The objective is to get as far as possible before the character dies. <!-- .element: class="delayed" -->
+        * Found great success on mobile platforms. <!-- .element: class="delayed" -->
+        * Well-suited to the small set of controls these games require, often limited to a single screen tap for jumping.<!-- .element: class="delayed" -->
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #Today's Project
+
+        We will be programming a game similar to the popular **Flappy Bird**:
+
+        ![](framework/img/flappy-bird.gif)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Today's Project
+
+        But instead of using birds and pipes, our game features a superhero named **Peri Pixel** from the <a href="http://codemobile.rocks" target="_blank">Code Mobile</a>. 
+        
+        ![](framework/img/final-product.gif) <!-- .element: class="gametitle float" --><h2>We will learn how to:</h2><span>• Create a scrolling effect like most 2D platformers today <br>• Create a realistic gravity effect<br>• Use and import graphics (sprites) using spritesheets</span>
+
+        Play the final project <a href="https://scratch.mit.edu/projects/114042986/#fullscreen" target="_blank">here</a>
+      </script>
+    </section>
+
+    <section class="slide two-col-list" data-markdown>
+      <script type="text/template">
+        #Course Outline
+        
+        <div class="table-of-contents"></div>  
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #Introduction to Scratch
+
+        ![](framework/img/scratch-intro.gif)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #Getting set up
+
+
+      </script>
+    </section>
+
+<!--     <section class="slide side-by-side" data-markdown data-toc>
+      <script type="text/template">
+        #Two images
+
+        Add a class of `side-by-side` to `<section>` to align two images.
+
+        ![](http://cl.ly/image/3c2y1v2A2o1q/Image%202015-01-29%20at%2011.55.36%20PM.png)
+        ![](http://cl.ly/image/3Z3U023P361J/Image%202015-01-30%20at%2012.37.27%20AM.png)
+      </script>
+    </section> -->
+
+
+    <section class="slide small-type" data-markdown>
+      <script type="text/template">
+      #Next Steps
+
+
+    </script>
+    </section>
+
+    <!-- Last slide -->
+    <section class="slide last">
+      <h1>Thank you!</h1>
+      <h2 class="heading-bg">
+        <span>Title of Workshop</span><br>
+        <span>Second line</span>
+      </h2>  
+
+      <img class="instructor" src="http://cl.ly/image/0r3Q3H110G36/profile-generic.jpg" alt="instructor name">
+      <h2><span class="cursive">with</span> Instructor Name</h2>
+      <ul>
+        <li><a href="mailto:">hello@email.com</a></li>
+        <li><a href="#">mywebsite.com</a></li>
+        <li><a href="http://twitter.com/">@twitter</a></li>
+      </ul>
+
+      <p class="attribution">Slide presentation created by <a href="http://christinatruong.com">Christina Truong</a> based on <a href="https://github.com/LeaVerou/csss">Lea Verou's SlideShow</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
+    </section>
+
+  </main><!-- cls main section -->
+  
+  <script src="framework/scripts/jquery-1.11.0.min.js"></script>
+  <script src="framework/scripts/slideshow.js"></script>
+
+  <!-- Uncomment the plugins you need -->
+  <script src="framework/scripts/plugins/css-edit.js"></script>
+  <script src="framework/scripts/plugins/css-snippets.js"></script>
+  <script src="framework/scripts/plugins/css-controls.js"></script>
+  <!-- <script src="plugins/code-highlight.js"></script>-->
+
+  <script src="framework/scripts/plugins/markdown/marked.js"></script>
+  <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="framework/scripts/llc.js"></script>
+  <script>
+    var slideshow = new SlideShow();
+
+    // Grabs all the .snippet elements
+    var snippets = document.querySelectorAll('.snippet');
+    for(var i=0; i<snippets.length; i++) {
+      new CSSSnippet(snippets[i]);
+    }
+  </script>
+</body>
+</html>
